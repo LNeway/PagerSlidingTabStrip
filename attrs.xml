@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="TabStrip">
+        <attr name="item_backgroud_checked" format="color" />
+        <attr name="item_backgroud_uncheck" format="color"/>
+        <attr name="item_text_checked" format="color" />
+        <attr name="item_text_uncheck" format="color"/>
+    </declare-styleable>
+
+</resources>
