@@ -83,6 +83,23 @@ public class TabStrip extends LinearLayout {
 
     public void setViewPager(ViewPager viewPager) {
         this.viewPager = viewPager;
+        viewPager.addOnPageChangeListener(new ViewPager.OnPageChangeListener() {
+            @Override
+            public void onPageScrolled(int position, float positionOffset, int positionOffsetPixels) {
+
+            }
+
+            @Override
+            public void onPageSelected(int position) {
+                currentIndex = position;
+                changeTabStyle(currentIndex);
+            }
+
+            @Override
+            public void onPageScrollStateChanged(int state) {
+
+            }
+        });
     }
 
     private void changeTabStyle(int currentItemIndex){
